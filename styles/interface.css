@@ -1,8 +1,6 @@
-/* Buttons */
-
 input[type="button"] {
     border: none;
-    background: #555;
+    background: rgb(245, 241, 241);
     padding: 10px;
     color: #fff;
     width: 100px;
@@ -124,7 +122,7 @@ label {
     font-weight: bold;
     text-align: right;
     width: 70px;
-    padding: 10px 15px 10px 0px;
+    padding: 10px 15px 10px 10px;
 }
 
 html body div input[disabled] {
