@@ -4,7 +4,7 @@ body {
     padding: 0px;
     text-align: center;
     font-family: UbuntuL;
-    color: #000;
+    color: hsl(0, 33%, 98%);
     display: grid;
     grid-template-areas: "algo-info menu" "algo-info container";
     grid-template-rows: 100px 1fr;
@@ -12,6 +12,7 @@ body {
     height: 100vh;
     width: 100vw;
     overflow: hidden;
+
 }
 
 a#repository {
@@ -31,13 +32,17 @@ a#repository img {
     height: 100%;
     width: 99%;
     padding: 100px 0px;
-    border-right: 4px solid #000;
+    border: 4px solid #000;
+}
+
+h2.algo-header {
+    text-decoration: underline;
 }
 
 #algo-info .algo-details {
     display: block;
     padding: 25px;
-    text-align: justify;
+    text-align: center;
     text-indent: 50px;
     line-height: 25px;
     font-weight: bold;
@@ -58,36 +63,38 @@ a#repository img {
     width: 160px;
 }
 #algo-info .algo-complexity ul .complexity-value {
-    padding: 20px;
+    padding: 10px;
 }
 
 #container {
     grid-area: container;
     width: 100%;
     height: 100%;
-    border-top: #333 10px solid;
+    border-top: #333 5px solid;
 }
 
 #bars {
     margin: auto;
-    width: 700px;
+    width: 750px;
     height: 500px;
+    min-height: 200px;
 }
 
 .bar {
-    background: rgb(24, 227, 10);
+    background: #010d00;
     display: inline-block;
-    border-right: 2px solid rgb(245, 7, 7);
-    border-left: 2px solid rgb(245, 7, 7);
-    border-bottom: 2px solid rgb(245, 7, 7);
+    border-right: 2px solid rgb(251, 248, 248);
+    border-left: 2px solid rgb(246, 243, 243);
+    border-bottom: 2px solid rgb(245, 242, 242);
     margin: 0px;
     position: relative;
     bottom: 0px;
     vertical-align: top;
     text-align: center;
     font-weight: bold;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    min-height: 7vh;
 }
 
 .compared {
@@ -135,6 +142,23 @@ a#repository img {
     align-items: center;
     margin: auto;
     width: 300px;
+}
+#sort:hover{
+    background-color: #07dfea;
+    color:#000;
+   
+}
+#stop:hover{
+    background-color: #07dfea;
+    color:#000;
+}
+#reset:hover{
+    background-color: #07dfea;
+    color:#000;
+}
+#restart:hover{
+    background-color: #07dfea;
+    color:#000;
 }
 
 .hidden {
